@@ -25,7 +25,7 @@ void push(char *string) {
     tail = tail->next;
 }
 
-void printList() {
+void printl() {
     Node *ptr = first;
     while (ptr != NULL) {
         if (ptr->string) {
@@ -42,7 +42,7 @@ int main() {
 
     while (fgets(Inbuf, 256, stdin) != NULL) {
         if (Inbuf[0] == '.') {
-            printList();
+            printl();
             return 0;
         }
 
